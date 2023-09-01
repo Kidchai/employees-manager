@@ -1,0 +1,21 @@
+{
+  "name": "employees-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/platform-browser": "^16.2.3",
+    "@angular/platform-browser-dynamic": "^16.2.3",
+    "@angular/router": "^16.2.3",
+    "mysql2": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.4"
+  }
+}

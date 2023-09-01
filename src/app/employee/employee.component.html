@@ -1,0 +1,25 @@
+<div align="center">
+    <h1>Employee Portal</h1>
+    Enter the Employee id:<input type="text" #empid><br><br>
+    Enter the Employee Name:<input type="text" #name><br><br>
+    Enter the Employee project:<input type="text" #project><br><br>
+    <button (click)="empData(empid.value,name.value,project.value)">Add Employee</button>
+    <p style="color: red">{{ resText }}</p>
+</div>
+<br><br>
+
+<div align="center">
+    <button (click)="getEmployees()">Employee List</button><br><br>
+    <table border="2">
+       <tr>
+        <th>EmpId</th>
+        <th>Name</th>
+        <th>Poject</th>
+       </tr>
+       <tr *ngFor="let emp of empList">
+        <td>{{ emp.empid }}</td>
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.project }}</td>
+       </tr>
+    </table>
+</div>
